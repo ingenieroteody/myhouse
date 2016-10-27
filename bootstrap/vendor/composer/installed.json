@@ -1,0 +1,473 @@
+[
+    {
+        "name": "symfony/polyfill-apcu",
+        "version": "v1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/polyfill-apcu.git",
+            "reference": "6d58bceaeea2c2d3eb62503839b18646e161cd6b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/polyfill-apcu/zipball/6d58bceaeea2c2d3eb62503839b18646e161cd6b",
+            "reference": "6d58bceaeea2c2d3eb62503839b18646e161cd6b",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2016-05-18 14:26:46",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "bootstrap.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony polyfill backporting apcu_* functions to lower PHP versions",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "apcu",
+            "compatibility",
+            "polyfill",
+            "portable",
+            "shim"
+        ]
+    },
+    {
+        "name": "symfony/class-loader",
+        "version": "v2.8.11",
+        "version_normalized": "2.8.11.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/class-loader.git",
+            "reference": "fb50892408036f9f431b563aac51a3f2f0087e81"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/class-loader/zipball/fb50892408036f9f431b563aac51a3f2f0087e81",
+            "reference": "fb50892408036f9f431b563aac51a3f2f0087e81",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9",
+            "symfony/polyfill-apcu": "~1.1"
+        },
+        "require-dev": {
+            "symfony/finder": "~2.0,>=2.0.5|~3.0.0"
+        },
+        "time": "2016-09-06 23:19:39",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.8-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\ClassLoader\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony ClassLoader Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "phpdocumentor/reflection-docblock",
+        "version": "2.0.4",
+        "version_normalized": "2.0.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
+            "reference": "d68dbdc53dc358a816f00b300704702b2eaff7b8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/d68dbdc53dc358a816f00b300704702b2eaff7b8",
+            "reference": "d68dbdc53dc358a816f00b300704702b2eaff7b8",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0"
+        },
+        "suggest": {
+            "dflydev/markdown": "~1.0",
+            "erusev/parsedown": "~1.0"
+        },
+        "time": "2015-02-03 12:10:50",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "phpDocumentor": [
+                    "src/"
+                ]
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mike van Riel",
+                "email": "mike.vanriel@naenius.com"
+            }
+        ]
+    },
+    {
+        "name": "illuminate/support",
+        "version": "v4.2.17",
+        "version_normalized": "4.2.17.0",
+        "target-dir": "Illuminate/Support",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/illuminate/support.git",
+            "reference": "db61f3f6d507ce417ca993e1f93585db7efd8b12"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/illuminate/support/zipball/db61f3f6d507ce417ca993e1f93585db7efd8b12",
+            "reference": "db61f3f6d507ce417ca993e1f93585db7efd8b12",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "jeremeamia/superclosure": "~1.0.1",
+            "patchwork/utf8": "~1.1"
+        },
+        "time": "2015-01-27 20:51:43",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\Support": ""
+            },
+            "files": [
+                "Illuminate/Support/helpers.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ]
+    },
+    {
+        "name": "symfony/finder",
+        "version": "v2.5.12",
+        "version_normalized": "2.5.12.0",
+        "target-dir": "Symfony/Component/Finder",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Finder.git",
+            "reference": "e527ebf47ff912a45e148b7d0b107b80ec0b3cc2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/Finder/zipball/e527ebf47ff912a45e148b7d0b107b80ec0b3cc2",
+            "reference": "e527ebf47ff912a45e148b7d0b107b80ec0b3cc2",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2015-01-03 08:01:13",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.5-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Finder\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            },
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            }
+        ],
+        "description": "Symfony Finder Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "illuminate/filesystem",
+        "version": "v4.2.17",
+        "version_normalized": "4.2.17.0",
+        "target-dir": "Illuminate/Filesystem",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/illuminate/filesystem.git",
+            "reference": "9127fb58eb6b721d98d2f7077df6cb8004da24c0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/illuminate/filesystem/zipball/9127fb58eb6b721d98d2f7077df6cb8004da24c0",
+            "reference": "9127fb58eb6b721d98d2f7077df6cb8004da24c0",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/support": "4.2.*",
+            "php": ">=5.4.0",
+            "symfony/finder": "2.5.*"
+        },
+        "time": "2014-12-29 18:11:33",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\Filesystem": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ]
+    },
+    {
+        "name": "symfony/console",
+        "version": "v2.5.12",
+        "version_normalized": "2.5.12.0",
+        "target-dir": "Symfony/Component/Console",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/console.git",
+            "reference": "a43e750b4c74f3bdfca77c79c343033d35a6cd6e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/console/zipball/a43e750b4c74f3bdfca77c79c343033d35a6cd6e",
+            "reference": "a43e750b4c74f3bdfca77c79c343033d35a6cd6e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/event-dispatcher": "~2.1"
+        },
+        "suggest": {
+            "psr/log": "For using the console logger",
+            "symfony/event-dispatcher": ""
+        },
+        "time": "2015-02-08 07:07:45",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.5-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Console\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            },
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            }
+        ],
+        "description": "Symfony Console Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "illuminate/console",
+        "version": "v4.2.17",
+        "version_normalized": "4.2.17.0",
+        "target-dir": "Illuminate/Console",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/illuminate/console.git",
+            "reference": "e066bba708b7e72e84ddb8d3458da66ca8b037ea"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/illuminate/console/zipball/e066bba708b7e72e84ddb8d3458da66ca8b037ea",
+            "reference": "e066bba708b7e72e84ddb8d3458da66ca8b037ea",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0",
+            "symfony/console": "2.5.*"
+        },
+        "time": "2015-01-27 20:51:43",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\Console": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ]
+    },
+    {
+        "name": "barryvdh/laravel-ide-helper",
+        "version": "1.11.x-dev",
+        "version_normalized": "1.11.9999999.9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/barryvdh/laravel-ide-helper.git",
+            "reference": "7b263ffbce943ee903510a23dce0e837c7c6960f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/7b263ffbce943ee903510a23dce0e837c7c6960f",
+            "reference": "7b263ffbce943ee903510a23dce0e837c7c6960f",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/console": "4.x",
+            "illuminate/filesystem": "4.x",
+            "illuminate/support": "4.x",
+            "php": ">=5.3.0",
+            "phpdocumentor/reflection-docblock": "2.0.4",
+            "symfony/class-loader": "~2.3"
+        },
+        "require-dev": {
+            "doctrine/dbal": "~2.3"
+        },
+        "suggest": {
+            "doctrine/dbal": "Load information from the database about models for phpdocs (~2.3)"
+        },
+        "time": "2015-06-07 13:09:17",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.11-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Barryvdh\\LaravelIdeHelper\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Barry vd. Heuvel",
+                "email": "barryvdh@gmail.com"
+            }
+        ],
+        "description": "Laravel IDE Helper, generates correct PHPDocs for all Facade classes, to improve auto-completion.",
+        "keywords": [
+            "autocomplete",
+            "codeintel",
+            "helper",
+            "ide",
+            "laravel",
+            "netbeans",
+            "phpdoc",
+            "phpstorm",
+            "sublime"
+        ]
+    }
+]
