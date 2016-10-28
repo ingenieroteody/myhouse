@@ -28,6 +28,10 @@ Route::group(['middleware' => ['web']], function () {
         return view('welcome');
     })->middleware('guest');
 	
+	//Dashboard
+	Route::get('/dashboard', 'DashboardController@index');
+	Route::get('/dashboard/ajaxGetMostSoldItems/{date}' , 'DashboardController@ajaxGetMostSoldItems');
+	
 	//Consignors
 	Route::get('/consignors', 'ConsignorController@index');
 	Route::post('/consignor', 'ConsignorController@store');
@@ -40,7 +44,6 @@ Route::group(['middleware' => ['web']], function () {
 	Route::put('/ajax/item/update', 'ItemController@ajaxUpdate');
 	Route::put('/ajax/stock/update', 'ItemController@ajaxUpdateStock');
 	Route::delete('/item', 'ItemController@ajaxDelete');
-	
 	
 	//Transactions
 	Route::get('/transactions', 'TransactionController@index');

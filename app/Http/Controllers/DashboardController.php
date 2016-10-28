@@ -10,9 +10,9 @@ use App\Repositories\TransactionRepository;
 use App\Repositories\ItemRepository;
 use App\Repositories\ConsignorRepository;
 
-class ReportsController extends Controller
+class DashboardController extends Controller
 {
-  /**
+   /**
      * The transaction repository instance.
      *
      * @var TransactionRepository
@@ -47,10 +47,7 @@ class ReportsController extends Controller
      */
     public function index(Request $request)
     {
-        return view('report.index', [
-			"consignors" => $this->consignors->getAllActive(),
-			"transactions" => $this->transactions->getAllActive()
-		]);
+        return view('dashboard.index');
     }
 	
 	/**
