@@ -142,10 +142,9 @@
 @section('javascripts')
 @parent
 <script type="text/javascript">
-//load the price when item is selected
-var transaction_id = 0;
+//load the items when a consignor is selected
 
-/*jQuery("#item_id").change(function(){
+/*jQuery("#consignor_id").change(function(){
 	jQuery.ajax({
 		type		:	'GET',
 		url 		:	'/ajax/items/'+jQuery(this).val(),

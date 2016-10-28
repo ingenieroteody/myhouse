@@ -34,6 +34,7 @@ class ReportsController extends Controller
 	protected $consignors;
 	
     public function __construct(TransactionRepository $transactions, ItemRepository $items, ConsignorRepository $consignors) {
+		//$this->middleware('auth');
 		$this->transactions = $transactions;
 		$this->items = $items;
 		$this->consignors = $consignors;
