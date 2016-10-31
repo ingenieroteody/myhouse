@@ -30,7 +30,7 @@
 
                             <div class="col-sm-6">
 								<select id="consignor_id" name="consignor_id" data-placeholder="Choose Consignor" class="chosen-select form-control" style="width:350px;" tabindex="2">
-									<option value=""></option>
+									<option value="">-- Consignor --</option>
 									@foreach ($consignors as $consignor)
 										<option value="{{$consignor->id}}" >{{$consignor->firstname}} {{$consignor->lastname}}</option>
 									@endforeach
@@ -42,7 +42,9 @@
 						<div class="form-group ">
                             <label for="item_id" class="col-sm-2 control-label">Item</label>
                             <div class="col-sm-2">
-								<input type="text" name="item_id" id="item_id" class="form-control" value="{{ Request::old('quantity') }}">
+								<select id="item_id" name="item_id" data-placeholder="Choose an Item" class="chosen-select form-control" style="width:350px;" tabindex="2">
+									<option value="">-- Item --</option>
+								</select>
                             </div>
                         </div>
 						
@@ -143,20 +145,34 @@
 @parent
 <script type="text/javascript">
 //load the items when a consignor is selected
-
-/*jQuery("#consignor_id").change(function(){
+3480
+jQuery("#consignor_id").change(function(){
 	jQuery.ajax({
 		type		:	'GET',
-		url 		:	'/ajax/items/'+jQuery(this).val(),
+		url 		:	'/ajax/consignoritems/'+jQuery(this).val(),
 		dataType	:	'json',
 		success		:	function(data) {
 						//reset value of fields
-						jQuery('#transaction-quantity, #transaction-price, #transaction-totalprice').val('');
-						jQuery('#transaction-price').val(data.price);
-						
+
+						var select = jQuery('select#item_id');
+						//reset option
+						select.find('option').remove().end().append('<option>-- Item --</option>');
+
+						for(var d in data) {
+							if(data.hasOwnProperty(d)) {
+								select.append(jQuery('<option>', {
+									value : data[d].id,
+									text : "[" + data[d].code + "] " + data[d].name
+									}
+								));
+							}
+						}
+					},
+		error		:	function(xhr,status,err) {
+						console.log(xhr,status,err);
 					}
 	});
-});*/
+});
 
 </script>
 @endsection

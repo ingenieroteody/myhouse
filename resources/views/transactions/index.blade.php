@@ -30,7 +30,7 @@
 
                             <div class="col-sm-6">
 								<select id="item_id" name="item_id" data-placeholder="Choose an Item..." class="chosen-select form-control" style="width:350px;" tabindex="2">
-									<option value=""></option>
+									<option value="">-- Item --</option>
 									@foreach ($items as $item)
 										<option value="{{$item->id}}" {{ (old('item_id') == $item->id) ? "selected" : "" }} >[{{$item->code}}] {{$item->name}}</option>
 									@endforeach

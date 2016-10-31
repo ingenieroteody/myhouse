@@ -52,7 +52,7 @@
 
                             <div class="col-sm-6">
 								<select id="item-consignor" name="consignor_id" data-placeholder="Choose a Consignor..." class="chosen-select form-control" style="width:350px;" tabindex="2">
-									<option value=""></option>
+									<option value="">-- Consignor --</option>
 									@foreach ($consignors as $consignor)
 										<option value="{{$consignor->id}}" {{ (old('consignor_id') == $consignor->id) ? "selected" : "" }} >{{$consignor->lastname}}, {{$consignor->firstname}}</option>
 									@endforeach
@@ -219,7 +219,7 @@
 
 								<div class="col-sm-6">
 									<select id="edit-consignor_id" name="consignor_id" data-placeholder="Choose a Consignor..." class="chosen-select form-control" style="width:350px;" tabindex="2">
-										<option value=""></option>
+										<option value="">-- Consignor --</option>
 										@foreach ($consignors as $consignor)
 											<option value="{{$consignor->id}}" {{ (old('consignor_id') == $consignor->id) ? "selected" : "" }} >{{$consignor->lastname}}, {{$consignor->firstname}}</option>
 										@endforeach

@@ -66,7 +66,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Task List
+                    MyHouse
                 </a>
             </div>
 

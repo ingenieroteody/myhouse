@@ -36,6 +36,7 @@ Route::group(['middleware' => ['web']], function () {
 	Route::get('/consignors', 'ConsignorController@index');
 	Route::post('/consignor', 'ConsignorController@store');
 	Route::delete('/consignor/{id}', 'ConsignorController@delete');
+    Route::get('/ajax/consignoritems/{id}','ConsignorController@consignorItems');
 	
 	//Items
 	Route::get('/items', 'ItemController@index');

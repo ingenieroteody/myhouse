@@ -97,4 +97,11 @@ class ConsignorController extends Controller
 	    return redirect('/consignors');
 	}
 
+	public function consignorItems(Request $request,$id) {
+        $consignor = Consignor::find($id);
+
+        return \Response::json($consignor->items);
+
+    }
+
 }
